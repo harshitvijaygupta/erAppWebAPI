@@ -151,14 +151,15 @@
                           else
                           {
                               localStorage.setItem("LoggedIn","True"); 
-                              alert("Successfully logged in."); 
+        
                               $("#floatingInput").val("");
                               $("#floatingPassword").val(""); 
                               $("#loginNav").text('Logout');
                               $("#loginBtn").hide();
-                              $("#listEmpBtn").show();
+                              $("#listEmpBtn").hide();
                               $("#registerBtn").hide();
-                              $("#loginMsg").text('🔼 Use above button to proceed.');
+                              $("#loginMsg").text('Logged in successfully ✅');
+                              alert("Successfull Authentication 🆗.");
                               location.assign("ListEmp.html");  
                           }
                   },
